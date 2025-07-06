@@ -1,0 +1,16 @@
+#!/bin/sh
+
+{{- if eq .chezmoi.os "windows" }}
+# Windows version
+if [ ! -f "${USERPROFILE}/.config/chezmoi/key.txt" ]; then
+    mkdir -p "${USERPROFILE}/.config/chezmoi"
+    chezmoi age decrypt --output "${USERPROFILE}/.config/chezmoi/key.txt" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
+fi
+{{- else }}
+# Unix/Linux/macOS version
+if [ ! -f "${HOME}/.config/chezmoi/key.txt" ]; then
+    mkdir -p "${HOME}/.config/chezmoi"
+    chezmoi age decrypt --output "${HOME}/.config/chezmoi/key.txt" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
+    chmod 600 "${HOME}/.config/chezmoi/key.txt"
+fi
+{{- end }}
