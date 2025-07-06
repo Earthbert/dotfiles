@@ -1,4 +1,4 @@
 if (!(Test-Path "$env:USERPROFILE\.config\chezmoi\key.txt")) {
     New-Item -ItemType Directory -Path "$env:USERPROFILE\.config\chezmoi" -Force
-    chezmoi age decrypt --output "$env:USERPROFILE\.config\chezmoi\key.txt" --passphrase "{{ .chezmoi.sourceDir }}\key.txt.age"
+    chezmoi age decrypt --output "$env:USERPROFILE\.config\chezmoi\key.txt" --passphrase "{{ .chezmoi.sourceDir }}\..\key.txt.age"
 }

@@ -1,4 +1,9 @@
 {{ if ne .chezmoi.os "windows" }}
 Documents
 AppData
+.chezmoiscripts/windows/**
+{{ end }}
+
+{{ if ne .chezmoi.os "linux" }}
+.chezmoiscripts/linux/**
 {{ end }}
