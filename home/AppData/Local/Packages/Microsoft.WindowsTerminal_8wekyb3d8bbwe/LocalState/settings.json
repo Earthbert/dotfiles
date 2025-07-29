@@ -54,6 +54,7 @@
             "colorScheme": "Unholy",
             "font": 
             {
+                "builtinGlyphs": true,
                 "face": "JetBrainsMono Nerd Font Mono",
                 "size": 12,
                 "weight": "normal"
@@ -71,12 +72,10 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d FedoraLinux-42",
-                "guid": "{93b6346a-7e27-4dfc-b31e-6422ccf76e1a}",
+                "guid": "{0c2518e0-01c6-5f4b-bbb6-3acddd920c78}",
                 "hidden": false,
-                "icon": "C:\\Users\\earthbert\\Pictures\\Icons\\image-linux-logo-logopedia-fandom-powered-wikia-11.png",
-                "name": "Fedora",
-                "startingDirectory": "~"
+                "name": "openSUSE-Tumbleweed",
+                "source": "Microsoft.WSL"
             }
         ]
     },
