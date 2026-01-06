@@ -153,7 +153,6 @@
     "go.toolsManagement.autoUpdate": true,
     "editor.codeActionsOnSave": {},
     "search.useIgnoreFiles": false,
-    "workbench.colorTheme": "Ayu Mirage Bordered",
     "zig.zls.enabled": "on",
     "terminal.integrated.commandsToSkipShell": [
         "language-julia.interrupt"
@@ -176,5 +175,7 @@
     },
     "chat.agent.enabled": true,
     "rust-analyzer.check.command": "clippy",
-    "chat.editing.confirmEditRequestRemoval": false
+    "chat.editing.confirmEditRequestRemoval": false,
+    "clangd.path": "/home/earthbert/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/21.1.0/clangd_21.1.0/bin/clangd",
+    "workbench.colorTheme": "Ayu Mirage"
 }
