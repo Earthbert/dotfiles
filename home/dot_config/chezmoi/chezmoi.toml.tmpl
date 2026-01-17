@@ -4,8 +4,14 @@ encryption = "age"
     recipient = "age13dlwmxvxxhqr0n8s2kfe55u6nzzsuw6qdqa8z67fa8g56sac54asws5v60"
 
 [edit]
-    command = "code"
-    args = ["--wait"]
+    command = "codium"
 
 [diff]
     exclude = ["scripts"]
+
+[data]
+{{- if eq .chezmoi.hostname "hematite" }}
+    kde.activity_id="66598f15-64c8-48aa-9180-1702555d38ac"
+{{- end }}
+{{- if eq .chezmoi.hostname "silver" }}
+{{- end }}
